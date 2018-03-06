@@ -1,0 +1,2 @@
+webpackJsonp([2],{KOEW:function(e,t){},MQdR:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticClass:"errorPage"},[this._v("\n  404页面\n")])},staticRenderFns:[]};var a=n("VU/8")({name:"errorPage",data:function(){return{}}},r,!1,function(e){n("KOEW")},"data-v-2f964e09",null);t.default=a.exports}});
+//# sourceMappingURL=2.0ee8620ee67abfb93585.js.map
