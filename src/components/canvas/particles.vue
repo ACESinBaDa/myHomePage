@@ -25,7 +25,7 @@ export default {
           vy: canvasConfig.vy || 4,
           height: canvasConfig.height || 2,
           width: canvasConfig.width || 2,
-          count: canvasConfig.count || 200,
+          count: canvasConfig.count || 200, // 个数
           color: canvasConfig.color || '121, 162, 185',
           stroke: canvasConfig.stroke || '130, 255, 255',
           dist: canvasConfig.dist || 6000, // 点吸附距离,
@@ -163,7 +163,15 @@ export default {
     }
   },
   mounted () {
-    this.canvasInit()
+    let isPhone = (navigator.userAgent.indexOf('Android')) > 0 || (navigator.userAgent.indexOf('iPhone')) > 0 || (navigator.userAgent.indexOf('iPad')) > 0
+    if (isPhone) {
+      let config = {
+        count: 100
+      }
+      this.canvasInit(config)
+    } else {
+      this.canvasInit()
+    }
   }
 }
 </script>
